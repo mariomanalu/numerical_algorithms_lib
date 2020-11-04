@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import numerics1_blanchard as num
+import numerics1_manalu as num
 
 def fxn(x):
   return np.exp(-0.5*x) + np.sin(x) - 2*x
@@ -15,7 +15,7 @@ xinit  = 1.0  # this is the inital estimate for fixed point iteration and newton
 # set them to zero if you don't.
 run_bisection = 1
 run_plotting  = 0
-run_fixedpt   = 1
+run_fixedpt   = 0
 run_newton    = 0
 
 if (run_bisection):
@@ -99,7 +99,3 @@ if (run_newton):
   print("With tolerance = %0.2e, FPI gets the approximate value %0.12f." % (tol,rt))
   print("This took %d iterations." % (roots.size))
   print("\n Thought exercise: For this function with this initial estimate, what do you notice about the change in output and number of iterations and what does it mean about the result returned using the default tolerance?\n\n")
-
- 
-
-
