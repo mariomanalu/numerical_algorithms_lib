@@ -1,7 +1,6 @@
-#A script that performs bisection methods to find the root/roots of a function in Python
-
 import numpy as np
-
+import math
+#A function that bisects interval to find the root/roots of a function in Python
 def bisection(fxn, ainput, binput, tol = .000001, maxIter = 250):
     #fxn is a function
     #ainput is the lower bound
@@ -41,3 +40,22 @@ def bisection(fxn, ainput, binput, tol = .000001, maxIter = 250):
         iteration += 1
 
     return c, roots
+
+def fixedpt(fxn, xinit, tol = .000001, maxIter = 250):
+    #fxn is a function
+    #xinit is the initial approximation
+    #tol is tolerance. That is, any midpoint in a range of size equal or smaller than the tolerance is considered a root
+    #maxIter is maximum iteration. That is, the midpoint just before the maxIter-th iteration is considered a root
+
+    iter = 0
+    r = xinit
+    err = abs(r)
+    roots = np.zeros((maxIter,1))
+
+    while (err > tol) and (iter < maxIter):
+        r = fxn(r)
+        roots[iter] = r
+        err = abs(fxn(r) - r)
+        iter += 1
+
+    return r, roots

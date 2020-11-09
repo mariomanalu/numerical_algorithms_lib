@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numerics1_manalu as num
 
 def fxn(x):
-  return np.exp(-0.5*x) + np.sin(x) - 2*x
+    return np.exp(-0.5*x) + np.sin(x) - 2*x
 
 ainput = 0.0  # left endpoint
 binput = 1.0  # and right endpoint of the interval for bisection.
@@ -13,9 +13,9 @@ xinit  = 1.0  # this is the inital estimate for fixed point iteration and newton
 
 # change these to 1 if you want to test that section
 # set them to zero if you don't.
-run_bisection = 1
+run_bisection = 0
 run_plotting  = 0
-run_fixedpt   = 0
+run_fixedpt   = 1
 run_newton    = 0
 
 if (run_bisection):
