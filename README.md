@@ -1,6 +1,6 @@
-### Numerical Algorithms Lib
+# Numerical Algorithms Lib
 
-# Introduction
+### Introduction
 
 This file contains the implementation of various numerical algorithms.
 
@@ -24,7 +24,7 @@ This is an open source library. Thus, if you would like to implement and add som
 
   
 
-# How to use:
+### How to use:
 
 1. Download / clone the repo.
 
@@ -36,7 +36,7 @@ This is an open source library. Thus, if you would like to implement and add som
 
   
 
-# Tips:
+### Tips:
 
 1. If you are to need the root of a function, use Bisection Method. I like it because of it is O(logn) time complexity.
 
@@ -44,11 +44,11 @@ This is an open source library. Thus, if you would like to implement and add som
 
   
 
-# Credits:
+### Credits:
 
 I learned about the algorithms in this file from reading [Numerical Analysis by T.Sauer](https://www.pearson.com/us/higher-education/program/Sauer-Numerical-Analysis-3rd-Edition/PGM1735484.html). I did not develop any of these algorithms. I am only implementing what has been conjectured and proven to be true. If you are interested in knowing more about these algorithms, definitely read the book. If the book is too expensive for you to buy, I would like to let you know that there is a free pdf version somewhere on the internet. I do not recommend you to do that, but I share the believe that educational books should be free or at least affordable.
   
-# Disclaimer:
+### Disclaimer:
 
 Please read and study the code before using it. Some of these algorithms have hard-coded degree of error to stop while loops. That is, once the solution is correct up to say the 6th decimal digit, the algorithm may stop. The stopping criterion may need to be adjusted based on your needs.
 
